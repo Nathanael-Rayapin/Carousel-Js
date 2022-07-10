@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Main Background Container */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: url(https://images03.nicepage.io/c461c07a441a5d220e8feb1a/415c837ec5155a39bd890a19/rfr-min.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Carousel Container (with Arrow) */
+.carousel-container {
+    position: absolute;
+    width: 45%;
+    height: 260px;
+    bottom: 8em;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel-container .bi-chevron-left,
+.carousel-container .bi-chevron-right {
+    position: relative;
+    color: #fd853d;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.carousel-container ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    transition: all .6s;
+}
+
+.carousel-container ul li {
+    position: absolute;
+    bottom: 0;
+}
+
+/* Carousel Title */
+.carousel-title h2 {
+    position: relative;
+    font-size: 3.75rem;
+    text-transform: none;
+    font-weight: 400;
+    font-family: Oswald, sans-serif;
+    color: #fd853d;
+}
+
+/* Carousel Descriptio & Complementary Info */
+.carousel-description p,
+.carousel-complementary p {
+    position: relative;
+    font-size: 1rem;
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px 0 0;
+    color: #fff;
+}
+
+.carousel-complementary p span {
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: #fd853d;
+}
+
+/* Carousel Button */
+.carousel-complementary button {
+    position: relative;
+    width: 50%;
+    padding: 0.7rem;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fd853d;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 30px 0 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.carousel-complementary button:hover {
+    background-color: #fd853d;
+}
